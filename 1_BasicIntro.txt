@@ -1,0 +1,67 @@
+ng serve
+    -compiling the app.
+    -main.ts
+        -bootstrap module
+            -App module
+                -App component
+    -index.html
+        App module
+            App component
+                <app-root>
+    Whenever we do a ng serve/build/test
+    ------------------------------------
+    Compile your type-script code into java-script code.
+    -Transpiling
+    It will generate the files 
+    1.vendor.js 
+    2.styles.css
+    3.styles.js
+    4.polyfills.js
+    5.script.js
+    6.runtime.js
+    7.main.js
+
+    --package.json ,package-lock.json--
+
+        package.json
+            name of app
+            version of app
+            scripts
+                ->"npm run start"
+                    -> ng serve
+                        ->angular.json  
+
+    dependecies
+        all the modules/libraries you must have to run in prod env
+    devdependencies
+        all the modules/libraries you must have to develop your app.
+        we may add packages /modules but we may not use them.
+
+Angular cli(Command line interface)
+-----------------------------------
+It provides schematics and commands
+
+schematics: ng serve ,ng build, ng test, ng lint, ng e@2
+commands  : ng generate component <component-name>
+            ng generate module <module_name>
+            ng generate pipe <pipe_name>
+            ng generate directive
+
+            ng g 
+                components
+                pipes 
+                modules
+                services
+                directives
+
+    src
+        modules
+    ex:
+    there is an application like KLM
+    src 
+        contacts    --
+        orders        |
+        leads         | modules
+        reports       | 
+        settings      |
+        profile     --
