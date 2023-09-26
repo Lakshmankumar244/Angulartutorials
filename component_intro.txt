@@ -1,0 +1,65 @@
+ In contacts module we have components like
+        1.add.contacts
+        2.edit.contacts
+        3.view.contacts
+        4.delete.contacts
+    1.Angular is a modular based architecture.
+        -There is a lot of modules which are built-in
+        Examples:
+            -BrowserModule
+            -BrowserAnimationModule
+
+        -Angular Material library
+            -MatButtonModule
+            -MatDropDownModule
+    2.All the code and Functionality is grouped in a module.
+    3.Whenever you see a '@' symbol it's a Decorator.
+        @NgModule
+        what module consists -
+            -declarations
+                -this is where we will add all the components of the module.
+            -imports
+                -we can import modules inside a module.
+            -providers
+                -services that we need will be injected here.    
+            -bootstrap
+                -what is the first component ,that module should load.
+            -exports
+                -It is to export and expose the component outside of the module. 
+    4.Every angular application should have atleast 1 module.
+    5.By default,the angular framework provide us with Appmodule. 
+    6.Whenever we are building an angular application   
+        -we will always think of modules first.
+    7.Feature Modules.
+        -you can turn on or turn off the modules based on conditions.
+    
+    Angular components
+    ------------------
+    1.Angular components are the most important and basic building blocks of angular apps
+    2.Authentication Module
+        -new user
+        -login
+        -forgot password
+        -reset password
+
+    3.Component is a small functionality that will implement your application.
+    
+    4.When we group multiple components together it will became a module.
+
+    5.We can have parent-child relationship of components.
+
+    6. we can have components inside components.
+
+    7.Every component has 4 files auto-generated with it.
+        component.html -> view or html or template file.
+        component.css   -> StyleSheet of the component
+        component.spec.ts -> It will have unit test script for component
+        component.ts -> It will be a class file which will have methods -> Logic
+
+    8.component decorator inside component.ts file
+        selector -> unique identifier for the component.
+            ->id of the component
+        templateUrl -> your html code
+            -component.html file
+        styleURLs -> for linking your component style sheet.
+            -component.css file
